@@ -55,42 +55,44 @@ const features = [
           </button>
         </div>
       </div>
-    </div>
-    <div class="px-6 mx-auto max-w-6xl">
-      <div class="flex flex-col-reverse items-center md:flex-row lg:items-end">
-        <div class="pt-24 pr-8 pb-24 text-center md:pb-12 md:w-1/2 md:text-left">
-          <h1 class="relative z-10 text-5xl font-bold md:text-6xl font-display">
-            Learn the
-            <span
-              class="relative after:content-[url(/img/scratch.svg)] after:absolute after:-top-2 after:-right-6 after:-z-1"
+      <div class="px-6 mx-auto max-w-6xl">
+        <div class="flex flex-col-reverse items-center md:flex-row lg:items-end">
+          <div class="pt-24 pr-8 pb-24 text-center md:pb-12 md:w-1/2 md:text-left">
+            <h1 class="relative z-10 text-5xl font-bold md:text-6xl font-display">
+              Learn the
+              <span
+                class="relative after:content-[url(/img/scratch.svg)] after:absolute after:-top-2 after:-right-6 after:-z-1"
+              >
+                best
+              </span>
+              ways for staying
+              <span
+                class="relative after:content-[url(/img/decoration.svg)] after:absolute after:-bottom-2 after:-right-8 after:-z-1"
+              >
+                productive
+              </span>
+            </h1>
+            <p class="pt-8 text-lg leading-relaxed text-gray-500 md:max-w-md md:text-xl">
+              Working at home is definitely a convenient option and makes sense in these
+              unprecedented times.
+            </p>
+            <div
+              class="flex justify-center items-center pt-12 space-x-6 md:justify-start"
             >
-              best
-            </span>
-            ways for staying
-            <span
-              class="relative after:content-[url(/img/decoration.svg)] after:absolute after:-bottom-2 after:-right-8 after:-z-1"
-            >
-              productive
-            </span>
-          </h1>
-          <p class="pt-8 text-lg leading-relaxed text-gray-500 md:max-w-md md:text-xl">
-            Working at home is definitely a convenient option and makes sense in these
-            unprecedented times.
-          </p>
-          <div class="flex justify-center items-center pt-12 space-x-6 md:justify-start">
-            <button
-              class="flex justify-center items-center py-4 px-8 font-bold tracking-wide leading-7 text-white bg-blue-600 rounded-xl hover:shadow-xl"
-            >
-              Get Tips
-            </button>
-            <button class="flex items-center">
-              <PlayButton class="drop-shadow-lg hover:drop-shadow-xl" />
-              <span class="pl-4 font-bold tracking-wide">Learn More</span>
-            </button>
+              <button
+                class="flex justify-center items-center py-4 px-8 font-bold tracking-wide leading-7 text-white bg-blue-600 rounded-xl hover:shadow-xl"
+              >
+                Get Tips
+              </button>
+              <button class="flex items-center">
+                <PlayButton class="drop-shadow-lg hover:drop-shadow-xl" />
+                <span class="pl-4 font-bold tracking-wide">Learn More</span>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="flex items-end w-1/2 border-b border-gray-400">
-          <img :src="`/img/illustration.svg`" alt="" />
+          <div class="flex items-end w-1/2 border-b border-gray-400">
+            <img :src="`/img/illustration.svg`" alt="" />
+          </div>
         </div>
       </div>
     </div>
