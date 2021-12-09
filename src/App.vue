@@ -4,6 +4,7 @@ import PlayButton from "./icon/play-button.svg";
 import BriefcaseIcon from "./icon/briefcase.svg";
 import LocationIcon from "./icon/location.svg";
 import ProfileIcon from "./icon/location.svg";
+import MenuIcon from "./icon/menu.svg";
 
 const menu = ["Home", "About us", "Blogs", "Contact"];
 const features = [
@@ -41,7 +42,7 @@ const features = [
       <div class="px-6 mx-auto max-w-6xl">
         <div class="flex justify-between items-center py-10">
           <Logo />
-          <nav class="flex items-center space-x-10">
+          <nav class="hidden md:flex md:items-center md:space-x-10">
             <a v-for="item in menu" href="#" class="text-gray-700 hover:text-gray-900">
               {{ item }}
             </a>
@@ -49,13 +50,16 @@ const features = [
               Try now
             </a>
           </nav>
+          <button class="p-4 md:hidden">
+            <MenuIcon class="w-6 h-6 text-gray-800" />
+          </button>
         </div>
       </div>
     </div>
     <div class="px-6 mx-auto max-w-6xl">
-      <div class="flex">
-        <div class="pt-24 pr-8 pb-12 w-1/2">
-          <h1 class="relative z-10 text-6xl font-bold font-display">
+      <div class="flex flex-col-reverse items-center md:flex-row lg:items-end">
+        <div class="pt-24 pr-8 pb-24 text-center md:pb-12 md:w-1/2 md:text-left">
+          <h1 class="relative z-10 text-5xl font-bold md:text-6xl font-display">
             Learn the
             <span
               class="relative after:content-[url(/img/scratch.svg)] after:absolute after:-top-2 after:-right-6 after:-z-1"
@@ -69,11 +73,11 @@ const features = [
               productive
             </span>
           </h1>
-          <p class="pt-8 max-w-md text-xl leading-relaxed text-gray-500">
+          <p class="pt-8 text-lg leading-relaxed text-gray-500 md:max-w-md md:text-xl">
             Working at home is definitely a convenient option and makes sense in these
             unprecedented times.
           </p>
-          <div class="flex items-center pt-12 space-x-6">
+          <div class="flex justify-center items-center pt-12 space-x-6 md:justify-start">
             <button
               class="flex justify-center items-center py-4 px-8 font-bold tracking-wide leading-7 text-white bg-blue-600 rounded-xl hover:shadow-xl"
             >
@@ -92,7 +96,7 @@ const features = [
     </div>
     <div class="bg-gray-50">
       <div class="py-12 px-6 mx-auto max-w-6xl">
-        <div class="flex gap-x-5">
+        <div class="flex flex-col gap-5 md:flex-row">
           <div
             v-for="feature in features"
             class="flex flex-col p-8 space-y-4 bg-white rounded-lg border border-gray-200 transition-shadow duration-500 ease-out cursor-pointer hover:shadow-xl"
