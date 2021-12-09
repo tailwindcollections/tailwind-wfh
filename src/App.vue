@@ -35,7 +35,7 @@ const features = [
   <div class="w-full min-h-screen font-sans text-gray-900">
     <div class="bg-gradient-to-b from-[#FEE6F7] to-white">
       <img
-        src="./img/blob.svg"
+        :src="`/img/blob.svg`"
         alt=""
         class="absolute top-0 right-0 pointer-events-none"
       />
@@ -62,13 +62,13 @@ const features = [
           <h1 class="relative z-10 text-5xl font-bold md:text-6xl font-display">
             Learn the
             <span
-              class="relative after:content-[url(./img/scratch.svg)] after:absolute after:-top-2 after:-right-6 after:-z-1"
+              class="relative after:content-[url(/img/scratch.svg)] after:absolute after:-top-2 after:-right-6 after:-z-1"
             >
               best
             </span>
             ways for staying
             <span
-              class="relative after:content-[url(./img/decoration.svg)] after:absolute after:-bottom-2 after:-right-8 after:-z-1"
+              class="relative after:content-[url(/img/decoration.svg)] after:absolute after:-bottom-2 after:-right-8 after:-z-1"
             >
               productive
             </span>
@@ -90,7 +90,7 @@ const features = [
           </div>
         </div>
         <div class="flex items-end w-1/2 border-b border-gray-400">
-          <img src="./img/illustration.svg" alt="" />
+          <img :src="`/img/illustration.svg`" alt="" />
         </div>
       </div>
     </div>
